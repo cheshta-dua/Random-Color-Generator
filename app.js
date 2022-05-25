@@ -20,6 +20,7 @@ btn.addEventListener('click', function () //on clicking generate btn
     color.textContent = hexCode; //and display that hexcode (we had our "color name" within color class in html, so color.textContent)
     color.style.color = hexCode; // the font color of "hexcode" will also change
     copyBtn.innerHTML = "copy code"; //so that when we click generate, "copied!" is replaced with copy code again 
+    copyBtn.style.textDecoration="underline"; //the underline returns on "copy code"
 }
 )
 
@@ -29,6 +30,7 @@ copyBtn.addEventListener('click', function () {
     function copyText() {
         navigator.clipboard.writeText(hexCode); //copy to clipboard 
         copyBtn.innerHTML = "copied!"; //confirmation 
+        copyBtn.style.textDecoration="none"; //so that "copied!" doesn't have an underline
     }
 }
 )
