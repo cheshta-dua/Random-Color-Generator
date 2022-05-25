@@ -29,8 +29,8 @@ copyBtn.addEventListener('click', function () {
     copyBtn.addEventListener('click', copyText())
     function copyText() {
         navigator.clipboard.writeText(hexCode); //copy to clipboard 
-        copyBtn.innerHTML = "copied!"; //confirmation 
-        copyBtn.style.textDecoration="none"; //so that "copied!" doesn't have an underline
+        copyBtn.innerHTML = "copied!"; //confirmation
+        copyBtn.style.textDecoration="none"; //so that "copied!" doesn't have an underline 
     }
 }
 )
