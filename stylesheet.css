@@ -10,9 +10,6 @@ body {
     text-align: center;
     margin: auto;
     margin-top: 2%;
-}
-
-.card {
     width: 45%;
     position: relative;
 }
@@ -32,11 +29,8 @@ body {
 
 #btn {
     background: #ddd6f3;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #faaca8, #ddd6f3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     font-weight: 600;
     color: #413839;
@@ -44,7 +38,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
-font-size: 1.1vw;
+    font-size: 1.1vw;
 }
 
 #btn:hover {
@@ -59,3 +53,53 @@ font-size: 1.1vw;
     font-size: 1vw;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .card {
+      width: 85%;
+      margin-top: 8%;
+    }
+
+    body{
+        font-size: 3vw;
+    }
+
+    #copyBtn
+    {
+        font-size: 2.5vw;
+    }
+
+    #btn
+    {
+        font-size: 2.8vw;
+    }
+
+    .content {
+        padding-top: 10%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .card {
+      width: 70%;
+      margin-top: 5%;
+    }
+
+    body{
+        font-size: 2.3vw;
+    }
+
+    #copyBtn
+    {
+        font-size: 2vw;
+    }
+
+    #btn
+    {
+        font-size: 2vw;
+    }
+
+    .content {
+        padding-top: 20%;
+    }
+  }
